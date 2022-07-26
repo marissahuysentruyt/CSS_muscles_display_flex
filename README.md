@@ -1,4 +1,5 @@
-#Hi, Hey, Hello!
+Hi, Hey, Hello!
+---------------
 
 In this project, I'm working through several HTML & CSS tutorials, with the aim of bulking up my CSS muscles :muscle::muscle::muscle:
 
