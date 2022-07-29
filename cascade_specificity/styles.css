@@ -1,0 +1,17 @@
+div {
+    color: green;
+    font-family: sans-serif;
+    /*color: orange; this is called an override, because there are 2 conflicting property/values here, and CSS will take the most recent*/
+
+}
+
+.highlight {
+    color: red;
+}
+
+strong {
+    color: blue !important;
+}
+
+
+
