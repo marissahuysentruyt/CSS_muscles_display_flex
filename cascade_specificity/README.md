@@ -1,7 +1,7 @@
 Tutorial 1
 ----------
 
-Resource: (How to Apply CSS Styles to HTML with Cascade & Specificity)[https://www.digitalocean.com/community/tutorials/how-to-apply-css-styles-to-html-with-cascade-and-specificity]
+Resource: [How to Apply CSS Styles to HTML with Cascade & Specificity](https://www.digitalocean.com/community/tutorials/how-to-apply-css-styles-to-html-with-cascade-and-specificity)
 
 This tutorial is all about utilizing CSS "inline" and using the style tag in an HTML document. 
 
