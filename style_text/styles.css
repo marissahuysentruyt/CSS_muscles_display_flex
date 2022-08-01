@@ -1,6 +1,7 @@
 body {
     font-family: "Public Sans", Verdana, sans-serif;
     font-size: 18px;
+    color: darkslategray;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,24 +21,30 @@ strong em {
 
 h1 {
     font-size: 250%; /* 45px / 18...this could be represented I believe as 2.5em as well. */
+    color: indigo;
 }
 
 h2 {
     font-size: 200%; /*36px / 18 */
+    color: mediumvioletred;
 }
 
 h3 {
     font-size: 177.7777778%; /*32px / 18 */
+    color: limegreen;
 }
 
 h4 {
     font-size: 144.4444444%; /*26px / 18 */
+    color: chocolate;
 }
 
 h5 {
     font-size: 122.2222222%; /*22px / 18 */
+    color: crimson;
 }
 
 h6 {
     font-size: 100%; /*18px / 18 */
+    color: deepskyblue;
 }
