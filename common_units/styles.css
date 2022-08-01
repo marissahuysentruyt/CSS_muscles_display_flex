@@ -1,3 +1,87 @@
+:root {
+    font-size: 20px;
+}
+
 body {
     font-family: 'Averia Serif Libre', serif;
+}
+
+.excerpt {
+    /* margin: 20px auto; */
+    /* padding: 20px; */
+    /*margin: 4.1666667% auto; 20px / 480px*/
+    /*padding: 4.1666667%; 20px / 480px*/
+    margin: 1.25rem auto; /*20px / 16px*/ 
+    padding:  1.25rem; /*20px / 16px*/
+    border: 0.062rem solid black; /*1px / 16px */
+    width: 80%;
+    max-width: 30rem; /*480px / 16px*/
+    box-sizing: border-box;
+}
+
+.title {
+    /* font-size: 20px; target font size*/
+    /*font-size: 125%; 20px / 16px*/
+    font-size: 1.25rem; /*20px / 16px...this also changed the "default" size for .title*/
+
+    /* the margin was calculated on the above font size, so we don't want to change that proportion */
+    margin: 0 0 0.5em; /*10px / 20px...use the 20px because relatively speaking within .title, 20px is the base font-size*/
+
+
+}
+
+.quote {
+    margin: 0;
+}
+
+.quote-text {
+    /*font-size: 24px; this is bigger because it's the real focus of the content block*//*target font size*/
+    /*font-size: 150%; 24px / 16px*/
+
+    /* changing the font size here to rems is ok because it was based on 16px to begin with. The proportion is exactly the same. */
+    font-size: 1.5rem; /* target size is 24px. 24px / 16px...however now, the "default" for .quote-text is 24px*/
+
+    /* However, here the proportions are different. Let's say we wanted our margin to be proportioned to the root/rem/16px font-size instead... */
+    /*margin: 0.41667em 0; 10px / 24px: */
+    margin: 0.625rem 0; /*10px / 16px*/
+}
+
+.large {
+    /*font-size: 32px; target font size*/
+    /*font-size: 133.33333%; 32px / 24px*/ /*THE CONTEXT, WHICH IS WITHIN THE .QUOTE-TEXT CHANGED!!! SEE ABOVE: DEFAULT FONT SIZE WAS 24PX*/
+
+    /*this font size should stay proportionally the same*/
+    font-size: 1.33333em; /*32px / 24px*/
+
+    font-size: 1.5em;
+}
+
+.small {
+    /* font-size: 20px; target font size */
+    /*font-size: 83.33333%; 20px / 24px*/
+
+    /*this font size should stay proportionally the same*/
+    font-size: 0.83333em; /*20px / 24px*/
+
+    font-size: 0.75em;
+
+}
+
+.citation {
+    border-top: 0.07142em solid #ccc; /*1px / 14px*/
+    /* margin-top: 20px; */
+    /* padding-top: 20px; */
+    margin-top: 1.42857em; /*20px / 14px*/
+    padding-top: 1.42857em; /*20px / 14px*/
+    color: #555;
+    /*font-size: 14px; target font size*/
+    /*font-size: 87.5%; 14px / 16px*/ /*THE DEFAULT FONT SIZE WAS 16PX ONCE MORE*/
+    font-size: 0.875em; /*now the default size is 14px, so the margin, padding & border have a context of 14*/
+
+    /* let's make the relationship based on rems instead... */
+    border-top: 0.0625em solid #ccc; /*1px / 16px*/
+    margin-top: 1.25rem; /*20px / 16px*/
+    padding-top: 1.25rem; /*20px / 16px*/
+    font-size: 0.875rem; /*14px / 16px*/
+
 }
