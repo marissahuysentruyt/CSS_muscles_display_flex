@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+article {
+    border: 1px solid red;
+    margin: 2rem auto; /*target 32px / 16*/
+    padding: 2rem; /*target 32px / 16*/
+    width: 90%;
+    max-width: 40rem; /*target 640px / 16*/
+    box-sizing: border-box;
+    /* background-color: seashell; */
+    /* background-color: #f0f0f0; */
+    /* background-color: rgb(245, 240, 240); */
+    background-color: hsl(2000, 50%, 94%);
+    /*border: 0.25rem solid sandybrown; target 4px  16*/
+    /*border: 0.25rem solid #ccc; target 4px  16*/
+    /*border: 0.25rem solid rgb(209, 204, 204); target 4px  16*/
+    border: 0.25rem solid hsl(200, 50%, 80%); /*target 4px  16*/
+    /* color: maroon; */
+    /* color: #444; */
+    /* color: rgb(73, 68, 68); */
+    color: hsl(200, 50%, 27%);
+}
+
+h1 {
+    font-size: 2rem; /*target 32px / 16*/
+    margin: 0 0 1rem; /*top, r&l, bottom */
+    text-align: center;
+    /* color: teal; */
+    /* color: #900; */
+    /* color: rgb(153, 0, 0); */
+    color: hsl(20, 100%, 25%);
+}
+
+hr {
+    height: 0.25rem; /*target 4px / 16*/
+    margin: 2rem auto; /*target 32px */
+    width: 90%;
+    max-width: 18rem; /*target 288px / 16*/
+    border-radius: 0.5rem; /*target 8px / 16*/
+    /*border: 0.25rem solid teal; target 4px / 16*/
+    /*border: 0.25rem solid #bd0000; target 4px / 16*/
+    /*border: 0.25rem solid rgb(189, 0, 0); target 4px / 16*/
+    border: 0.25rem solid hsl(20, 100%, 35%); /*target 4px / 16*/
+    /* background-color: darkturquoise; */
+    /* background-color: #f00; */
+    /* background-color: rgb(255, 0, 0); */
+    background-color: hsl(20, 100%, 50%);
+}
+
+footer {
+    margin-top: 2rem; /*target 32px / 16*/
+    font-size: 0.875rem; /*target 14px / 16*/
+    /* color: chocolate; */
+    /* color: #888; */
+    /* color: rgb(141, 136, 136); */
+    color: hsl(200, 100%, 45%);
+}
+
+footer a {
+    /*inherit ensures that this link will take whatever color from its parent. In this case, chocolate. */
+    color: inherit;
+}
