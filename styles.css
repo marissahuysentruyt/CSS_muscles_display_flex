@@ -1,0 +1,32 @@
+body {
+    font-family: "Monsterrat", Helvetica, sans-serif;
+    background-color: #2E294E;
+}
+
+h1 {
+    color: #C5D86D;
+    font-family: "Press Start 2P", Helvetica, sans-serif;
+    font-size: 2.5em; /*target 40px*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0.5em; /*target 8px*/
+}
+
+a {
+    /* border: 1px solid red; */
+    color: #C5D86D;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    letter-spacing: 0.02em;
+}
+
+a:hover {
+    color: #fff;
+}

@@ -1,0 +1,51 @@
+body {
+    /* font-family: "Public Sans", sans-serif; */
+    /* default is "normal" which equates to 1.2 * the default font size  */
+    /* line-height: 1.5;  */
+
+    /* font-size, line-height, font-family */
+    font: 1em/1.5 "Public Sans", sans-serif;
+
+}
+
+h1,
+h2, 
+h3 {
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: 2.5rem; /* target 40 / 16px */
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 1.875rem; /* target 30 / 16px*/
+}
+
+h3 {
+    font-size: 1.5rem; /* target 24 / 16px */
+    margin: 2em 0 0.5em; /*top, r/l, bottom, however, 24px is the "default" font size right now for h3 (em is relative to this element)*/
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.125em; /*3px*/
+}
+
+/* adjacent sibling combinator (+): this could be used to manually "override" any unwanted margins/margin overlapping  */
+/* in this case, only the first p that is a siblings to h3 will get styled */
+h3 + p {
+    /* the reason we're specifying 0 here is because we want to keep the above .5em margin (12px) between the h3 and p. this paragraph has a larger margin-top, so we're basically disabling it.  */
+    margin-top: 0; 
+}
+
+p {
+    font-size: 1.25rem; /* target 20 / 16px */
+}
+
+article {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 70ch;
+}
+
