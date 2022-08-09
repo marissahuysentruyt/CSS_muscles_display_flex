@@ -1,0 +1,122 @@
+body {
+    background-color: #454545;
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+  
+section {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 50rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 0.25rem solid #777;
+    background-color: white;
+}
+  
+header {
+    text-align: right;
+}
+
+.back {
+    background-color: #cef;
+    border-radius: 0.5rem; /*target 8px /16*/
+    padding: 1rem; /*target 16px / 16*/
+}
+
+a,
+.link {
+    color: #25a;
+    /* first attempt:  */
+    /* transition: all 0.5s linear; */
+    /* second attempt:  */
+    transition: all 250ms ease-in-out;
+}
+
+a:hover,
+.link:hover,
+a:visited:hover,
+.link:visited:hover {
+  color: #b1b;
+}
+
+a:focus,
+.link:focus {
+  color: black;
+  outline: 2px solid gold;
+  background-color: gold;
+}
+
+a:active,
+.link:active,
+a:visited:active,
+.link:visited:active {
+  color: #808;
+  outline: none;
+  background-color: transparent;
+}
+
+a:visited,
+.link:visited {
+  color: #080;
+}
+
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* remove default styles of button */
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    text-align: center;
+}
+
+/* redefine custom properties */
+.button,
+.button:visited {
+    color: #25a;
+    background-color: #cef;
+    border: 1px solid #67c;
+    border-radius: 0.5rem; /*target 8px /16*/
+    padding: 0.75rem 1.5rem; /*target 12px & 24px / 16*/
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: bottom;
+    /* first attempt: */
+    /* transition: all 0.5s linear; */
+    /* second attempt: */
+    transition: all 180ms ease-in-out;
+}
+
+.button:hover,
+.button:visited:hover {
+    color: white;
+    background-color: #25a;
+    border-color: #25a;
+}
+.button:focus {
+    outline: none;
+    color: black;
+    background-color: gold;
+    border-color: black;
+}
+
+.button:active {
+    color: #ddd;
+    background-color: #127;
+    border-color: #127;
+}
+
+  
