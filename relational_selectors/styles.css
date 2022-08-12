@@ -1,0 +1,130 @@
+body {
+  font-family: system-ui, sans-serif;
+  color: #333;
+}
+
+.content-width {
+  width: 90%;
+  margin: 2rem auto;
+  max-width: 70ch; 
+}
+
+section{
+  margin: 4rem 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: mediumblue;
+}
+
+/*any blockquote within .descendant*/
+.descendant blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1rem 1rem 2rem;
+  border-left: 0.125rem indigo solid;
+  background-color: lavender;
+}
+
+/*any p within .descendant (even if p is a more distant relative)*/
+/* any p within .child */
+.descendant p,
+.child p,
+.general-sibling p,
+.adjacent-sibling p {
+  line-height: 1.5;
+}
+
+/*any p inside of blockquote within .descendant*/
+.descendant blockquote p {
+  font-size: 1.25rem;
+  color: #222;
+}
+
+/*this selects only the direct/immediate child p of section.child*/
+.child > p {
+  color: forestgreen;
+}
+
+/*find the p within .general-sibling. THEN (~) target the rest of the p that are siblings to that*/
+/* .general-sibling p ~ p {
+  color: lightseagreen;
+} */
+
+/*visually, nothing will happen if you refactor the above code to use the .general-sibling div instead*/
+/*find the div within .general-sibling. THEN (~) target the rest of the p that are siblings to that*/
+.general-sibling div ~ p {
+  color: lightseagreen;
+}
+
+/*start with p in .adjacent-sibling, then find its next p sibling to style. there has to be 2 p right next to each other for this to work */
+.adjacent-sibling p + p {
+  border-top: 1px solid black;
+  padding-top: 1em;
+}
+
+/*target the p that is an immediate sibling to (right after) the div inside of .adjacent-sibling*/
+.adjacent-sibling div + p {
+  border-top: 1px solid red;
+  padding-top: 1em;
+}
+
+ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5rem 0.75rem;
+  background-color: hsl(120, 50%, 95%);
+  border: 1px solid hsl(120, 50%, 80%);
+}
+
+/*when there are 2 li elements directly following each other, make the border-top: none on the second li (the first li's border-bottom will remain)*/
+ul li + li {
+  border-top: none;
+}
+
+/*the direct, first child of ul that is an li */
+ul > li:first-child {
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+/*targets the direct, last child of ul that is still an li*/
+ul > li:last-child {
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+/*targets the direct, ONLY child of ul that is an li*/
+ul > li:only-child {
+  border-radius: 0.75rem;
+}
+
+ol {
+  padding: 0;
+  list-style-position: inside; /*this includes the number inside of the list item*/
+}
+
+ol li {
+  padding: 0.25rem;
+}
+
+/*any even numbered child that is an li*/
+ol li:nth-child(even) {
+  background-color: aliceblue;
+}
+
+/*any odd numbered child that is an li*/
+ol li:nth-child(odd) {
+  background-color: lavenderblush;
+}
+
+/*the 4th child of ol that is an li*/
+ol li:nth-child(4) {
+  color: white;
+  background-color: indigo;
+}
