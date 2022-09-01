@@ -1,0 +1,8 @@
+Tutorial 18
+========
+
+Reference: [How To Use Opacity and Transparency to Create a Modal in CSS](https://www.digitalocean.com/community/tutorials/how-to-use-opacity-and-transparency-to-create-a-modal-in-css)
+
+Opacity set on an element will affect not only itself, but any children as well (i.e. setting the opacity of a `div` will change the opacity of its `p` children automatically). The alpha channels, contrastingly, will only affect the specific property they're set on (i.e. the first `p` has an alpha color channel so may be slightly transparent, while the rest of the `p` do not have that same alpha value and so remain entirely opaque). The alpha channels of colors are usually found at the very end of their syntax: rgbA, hslA, even hex can have an alpha by adding 2 additional values (so the hex number has 8 characters...).
+
+By using a combination of `opacity`, `:target` and `pointer-events`, you can create an entire modal window, without using JavaScript! Opacity change elements so they end up looking somewhat transparent. 0 is invisible, while 1 is completely opaque. When combined with the `:target` pseudo-class, and using id's of elements, you can trigger a change on the page (this needs a valid URL change to trigger the `:target` event). `Pointer-events` are capturing mouse clicks or touch interactions. Because we want the modal at first to be totally unusable while it's transparent, removing those `pointer-events` makes it useless, even to pointer-driven devices. Then once the `:target` interaction has triggered, we put the `pointer-events` back on (so now we can log clicks once more). 
